@@ -1,41 +1,41 @@
 appetizers
 Bacon Water Chestnuts
-4.99
+$4.99
 images/bacon_water_chestnuts.jpg
 Cream Cheese Bacon Crescents
-5.99
+$5.99
 images/cream_cheese_bacon_crescents.jpg
 Fingerling Potatoes
-6.99
+$6.99
 images/fingerling_potatoes.jpg
 Onion Rings
-4.99
+$4.99
 images/onion_rings.jpg
 
 entrees
 Chicken Strips
-9.99
+$9.99
 images/chicken_strips.jpg
 Salmon
-12.99
+$12.99
 images/salmon.jpg
 Steak
-11.99
+$11.99
 images/steak.jpg
 An Entire Turkey
-20.99
+$20.99
 images/turkey.jpg
 
 desserts
 Slice of Cake
-4.99
+$4.99
 images/cake.jpg
 Macarons
-4.99
+$4.99
 images/macarons.jpg
 Raspberry Brownies
-6.99
+$6.99
 images/raspberry_brownies.jpg
 Smores Cupcakes
-5.99
+$5.99
 images/smores_cupcakes.jpg
