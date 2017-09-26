@@ -1,8 +1,11 @@
 <?php
+
 $pageTitle='Desserts';
 $description='The R dessert menu page';
 
 include('include/header.php');
+session_start();
+include('./include/functions.php');
 ?>
 	
 

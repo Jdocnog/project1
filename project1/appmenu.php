@@ -3,6 +3,8 @@ $pageTitle='Appetizers';
 $description='Appetizer menu';
 
 include('include/header.php');
+session_start();
+include('./include/functions.php');
 ?>
  <body>
 	    
