@@ -4,9 +4,6 @@ $description='Main page for restaurant';
 
 include('include/header.php');
 ?>
- <body>
-	<header><!—content here -></header>    
-
 	<main> <!—content here -></main>  
         
         <?php

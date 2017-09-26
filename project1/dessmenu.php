@@ -4,8 +4,7 @@ $description='The R dessert menu page';
 
 include('include/header.php');
 ?>
-<body>
-	<header><!—content here -></header>    
+	
 
 	<main> <!—content here -></main>  
         

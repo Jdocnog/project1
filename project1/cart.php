@@ -4,8 +4,7 @@ $description='This will display user cart';
 
 include('include/header.php');
 ?>
- <body>
-	<header><!—content here -></header>    
+	
 
 	<main> <!—content here -></main>  
         

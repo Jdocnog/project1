@@ -4,7 +4,6 @@ $description='This page will display cart and total price';
 
 include('include/header.php');
 ?>
- <body>
 	<header><!—content here -></header>    
 
 	<main> <!—content here -></main>  
