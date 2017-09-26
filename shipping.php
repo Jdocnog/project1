@@ -16,12 +16,12 @@
             <h2>Please enter your shipping information below</h2>
             <form action="checkout.php">
                 <ul>
-                    <li><label>Address</label><input type="text" name="address"></li>
-                    <li><label>City</label><input type="text" name="city"></li>
-                    <li><label>State</label><input type="text" name="state"></li>
-                    <li><label>Postal/ZIP Code</label><input type="text" name="zip"></li>
+                    <label>Address</label><li><input type="text" name="address"></li>
+                    <label>City</label><li><input type="text" name="city"></li>
+                    <label>State</label><li><input type="text" name="state"></li>
+                    <label>Postal/ZIP Code</label><li><input type="text" name="zip"></li>
                 </ul>
-                <input type="submit" name="submit_shipping">
+                <div><input type="submit" name="submit_shipping"></div>
             </form>
         </main>  
   

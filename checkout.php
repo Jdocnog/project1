@@ -10,9 +10,11 @@
 <link rel="stylesheet" href="css/main.css">
 </head> 
  <body>
-	<header><!—content here -></header>    
+	<header></header>    
 
-	<main> <!—content here -></main>  
+	<main>
+        
+        </main>  
   
 	<footer>Your name –CS3800 assignment #-Fall2017</footer>  
 
