@@ -18,7 +18,7 @@
             <li><a href="./dessmenu.php">Desserts</a></li>
             <li><a href="./cart.php">Cart</a></li>
         </ul>
-        <?php echo pageTitle ?>
+        <?php echo $pageTitle ?>
     
     </header>
 

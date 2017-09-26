@@ -1,10 +1,11 @@
 <?php
+include('./include/header.php');
 $pageTitle='The R Restaurant';
 $description='Main page for restaurant';
 
-include('include/header.php');
+
 session_start();
-include('include/fucntions.php');
+include('./include/fucntions.php');
 ?>
     <main> 
         <p>
