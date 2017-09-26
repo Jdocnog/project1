@@ -10,5 +10,15 @@
     <link rel="stylesheet" href="css/main.css">
 </head> 
 <body>
-    <header><?php echo pageTitle ?></header>
+    <header>
+        <ul>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./appmenu.php">Appetizers</a></li>
+            <li><a href="./entmenu.php">Entrees</a></li>
+            <li><a href="./dessmenu.php">Desserts</a></li>
+            <li><a href="./cart.php">Cart</a></li>
+        </ul>
+        <?php echo pageTitle ?>
+    
+    </header>
 
