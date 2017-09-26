@@ -4,12 +4,14 @@ $description='This is the Menu page that contains our entrees';
 
 include('include/header.php');
 ?>
- <body>
+<body>
 	<header><!—content here -></header>    
 
 	<main> <!—content here -></main>  
-  
-	<footer>Your name –CS3800 assignment #-Fall2017</footer>  
+        
+        <?php
+            include('include/footer.php');
+        ?>
 
   </body>
 </html>

@@ -8,8 +8,10 @@ include('include/header.php');
 	<header><!—content here -></header>    
 
 	<main> <!—content here -></main>  
-  
-	<footer>Your name –CS3800 assignment #-Fall2017</footer>  
+        
+        <?php
+            include('include/footer.php');
+        ?>
 
   </body>
 </html>
