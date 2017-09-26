@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>    
-	<title> meaningful page title(reflecting page content)</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="brief description of the page">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-</head> 
+<?php
+$pageTitle='Entrees';
+$description='This is the Menu page that contains our entrees';
+
+include('include/header.php');
+?>
  <body>
 	<header><!—content here -></header>    
 
