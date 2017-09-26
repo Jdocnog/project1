@@ -9,4 +9,5 @@
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head> 
+<header><?php echo pageTitle ?></header>
 
