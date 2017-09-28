@@ -1,3 +1,4 @@
+
 <?php
 
 $pageTitle='The R Restaurant';
@@ -29,5 +30,6 @@ include('./include/functions.php');
     <?php
         include('include/footer.php');
     ?>
+
   </body>
 </html>

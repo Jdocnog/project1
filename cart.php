@@ -1,3 +1,4 @@
+
 <?php
 
 $pageTitle='Cart';
@@ -9,12 +10,13 @@ include('./include/functions.php');
 ?>
 	
 
-	<main> <!—content here -></main>  
+	<main> 
+</main>  
         
         <?php
             include('include/footer.php');
         ?>
-
+ 
   </body>
 </html>
 

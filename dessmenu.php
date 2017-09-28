@@ -1,3 +1,4 @@
+
 <?php
 
 $pageTitle='Desserts';
@@ -8,12 +9,21 @@ session_start();
 include('./include/functions.php');
 ?>
 	
-
-	<main> <!—content here -></main>  
+<main>
+            <?php
+            include 'include/functions.php';
+            display_des();
+            ?>
+        </main> 
+	  
         
         <?php
             include('include/footer.php');
         ?>
+
+	 
+  
+	
 
   </body>
 </html>
