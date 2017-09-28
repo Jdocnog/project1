@@ -1,5 +1,6 @@
 <?php
 
+
 function display_app() {
     $file_in = fopen("text/menu.txt", "r");
     $count = 0;
@@ -116,4 +117,5 @@ EOD;
         echo "Could not process request.";
     }
 }
+
 

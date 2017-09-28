@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>    
-	<title> meaningful page title(reflecting page content)</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="brief description of the page">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-</head> 
- <body>
-     <header><h1>Head me!</h1></header>
 
+<?php
+$pageTitle='Shipping Information';
+$description='Gets user input for shipping information';
+
+include('include/header.php');
+session_start();
+include('./include/functions.php');
+?>
         <main>
             <h2>Please enter your shipping information below</h2>
             <form action="checkout.php">
@@ -25,19 +20,11 @@
             </form>
         </main>  
   
-	<footer>Your name –CS3800 assignment #-Fall2017</footer>  
+	<?php
+            include('include/footer.php');
+        ?>
 
   </body>
 </html>
 
-
-
-
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 

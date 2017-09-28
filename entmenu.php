@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>    
-	<title> meaningful page title(reflecting page content)</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="brief description of the page">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-</head> 
- <body>
-	<header><!—content here -></header>    
+
+<?php
+
+$pageTitle='Entrees';
+$description='This is the Menu page that contains our entrees';
+
+include('include/header.php');
+session_start();
+include('./include/functions.php');
+?> 
+        
+         
 
 	<main>
             <?php
@@ -18,8 +17,9 @@
             display_ent();
             ?>
         </main> 
-  
-	<footer>Your name –CS3800 assignment #-Fall2017</footer>  
-
+   <?php
+            include('include/footer.php');
+        ?>
+	 
   </body>
 </html>
