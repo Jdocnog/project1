@@ -1,24 +1,34 @@
 
 
 header ul {
+    width: 100%;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     overflow: hidden;
     background-color: #333;
+    
 }
 
+
 li {
-    float: left;
+   float: left;
+   width: 13%;
+   padding: .5% 3%;
 }
 
 li a {
-    display: block;
+    display: flex;
+    flex-grow: 1;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 2em;
     text-decoration: none;
 }
+ a:hover {
+    color: orangered;
+}
+
 
 nav a:hover:not(.active) {
     background-color: #111;
@@ -51,3 +61,4 @@ label {
 div {
     clear: both;
 }
+
