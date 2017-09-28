@@ -12,10 +12,10 @@
 <body>
     <header>
         <ul id="nav">
-            <li><a href="./index.php">Home</a></li> |
-            <li><a href="./appmenu.php">Appetizers</a></li> |
-            <li><a href="./entmenu.php">Entrees</a></li> |
-            <li><a href="./dessmenu.php">Desserts</a></li> |
+            <li><a href="./index.php">Home</a></li> 
+            <li><a href="./appmenu.php">Appetizers</a></li> 
+            <li><a href="./entmenu.php">Entrees</a></li> 
+            <li><a href="./dessmenu.php">Desserts</a></li> 
             <li><a href="./cart.php">Cart</a></li>
         </ul>
         <h1><?php echo $pageTitle; ?></h1>
