@@ -12,7 +12,12 @@
  <body>
 	<header><!—content here -></header>    
 
-	<main> <!—content here -></main>  
+        <main>
+            <?php
+            include 'include/functions.php';
+            display_app();
+            ?>
+        </main>  
   
 	<footer>Your name –CS3800 assignment #-Fall2017</footer>  
 
