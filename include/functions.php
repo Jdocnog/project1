@@ -5,26 +5,25 @@ function display_app() {
     $count = 0;
     $menu_size = 4;
     if ($file_in) {
-        while (($line = fgets($file_in)) != false) {
-            echo $line;
-            if ($line == "appetizers") {
-                echo $line;
+        $line = fgets($file_in);
+        while ($line != false) {
+            if (strpos($line, 'appetizers') !== false) {
                 break;
+            }
+            else {
+                $line = fgets($file_in);
             }
         }
         while ($count < $menu_size) {
             $name = fgets($file_in);
             $price = fgets($file_in);
             $url = fgets($file_in);
-            echo $name;
-            echo $price;
-            echo $url;
             echo <<<EOD
                 <form action="appmenu.php">
                     <figure>
                         <img src="$url" alt="Menu Image"><br>
-                        <p>$name</p><br>
-                        <p>$price</p><br>
+                        <p>$name</p>
+                        <p>$price</p>
                         <input type="hidden" name="name" value="$name">
                         <input type="hidden" name="price" value="$price">
                         <input type="submit" name="add_to_cart" value="Add to Cart">
@@ -45,9 +44,37 @@ function display_ent() {
     $count = 0;
     $menu_size = 4;
     if ($file_in) {
-        while (($first_line = fgets($file_in)) !== "entrees") {
-            
+        $line = fgets($file_in);
+        while ($line != false) {
+            if (strpos($line, 'entrees') !== false) {
+                break;
+            }
+            else {
+                $line = fgets($file_in);
+            }
         }
+        while ($count < $menu_size) {
+            $name = fgets($file_in);
+            $price = fgets($file_in);
+            $url = fgets($file_in);
+            echo <<<EOD
+                <form action="entmenu.php">
+                    <figure>
+                        <img src="$url" alt="Menu Image"><br>
+                        <p>$name</p>
+                        <p>$price</p>
+                        <input type="hidden" name="name" value="$name">
+                        <input type="hidden" name="price" value="$price">
+                        <input type="submit" name="add_to_cart" value="Add to Cart">
+                    </figure>
+                </form>
+EOD;
+            $count++;
+        }
+    }
+    else {
+        // Case for if there is no file of the specified name.
+        echo "Could not process request.";
     }
 }
 
@@ -56,9 +83,37 @@ function display_des() {
     $count = 0;
     $menu_size = 4;
     if ($file_in) {
-        while (($first_line = fgets($file_in)) !== "desserts") {
-            
+        $line = fgets($file_in);
+        while ($line != false) {
+            if (strpos($line, 'desserts') !== false) {
+                break;
+            }
+            else {
+                $line = fgets($file_in);
+            }
         }
+        while ($count < $menu_size) {
+            $name = fgets($file_in);
+            $price = fgets($file_in);
+            $url = fgets($file_in);
+            echo <<<EOD
+                <form action="dessmenu.php">
+                    <figure>
+                        <img src="$url" alt="Menu Image"><br>
+                        <p>$name</p>
+                        <p>$price</p>
+                        <input type="hidden" name="name" value="$name">
+                        <input type="hidden" name="price" value="$price">
+                        <input type="submit" name="add_to_cart" value="Add to Cart">
+                    </figure>
+                </form>
+EOD;
+            $count++;
+        }
+    }
+    else {
+        // Case for if there is no file of the specified name.
+        echo "Could not process request.";
     }
 }
 
