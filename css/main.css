@@ -10,6 +10,10 @@ header ul {
     
 }
 
+header h1 {
+    text-align: center;
+    background-color: white;
+}
 
 li {
    float: left;
@@ -62,3 +66,7 @@ div {
     clear: both;
 }
 
+footer {
+    text-align: center;
+    background-color: white;
+}

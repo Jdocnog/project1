@@ -10,13 +10,16 @@ include('./include/functions.php');
 ?>
 	
 
-	<main> 
-</main>  
+	<main>
+            <?php
+            display_cart();
+            ?>
+        </main>  
         
         <?php
             include('include/footer.php');
         ?>
  
-  </body>
+    </body>
 </html>
 

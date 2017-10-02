@@ -1,17 +1,22 @@
 
 <?php
-$pageTitle='Entrees';
-$description='This is the Menu page that contains our entrees';
+    $pageTitle='Entree Menu';
+    $description='This page displays all items on the entree menu';
 
-include('include/header.php');
-session_start();
-include('./include/functions.php');
+    include('include/header.php');
+    session_start();
+    include('./include/functions.php');
+    if(isset($_GET['add_to_cart'])) {
+        add_to_cart();
+    }
 ?>
- <body>
 	<main>
             <?php
-            display_menu("entrees", 4);;
+                display_menu("entrees", 4);
             ?>
-        </main> 	 
-  </body>
+        </main> 
+            <?php
+                include('include/footer.php');
+            ?>
+    </body>
 </html>

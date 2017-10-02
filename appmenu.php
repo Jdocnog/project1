@@ -1,17 +1,25 @@
 
 <?php
-$pageTitle='Appetizers';
-$description='Appetizer menu';
+    $pageTitle='Appetizer Menu';
+    $description='This page displays all items on the appetizer menu';
 
-include('include/header.php');
-session_start();
-include('./include/functions.php');
+    include('include/header.php');
+    session_start();
+    include('./include/functions.php');
+    if(isset($_GET['start_order'])) {
+        $_SESSION['cart_array'] = array();
+    }
+    if(isset($_GET['add_to_cart'])) {
+        add_to_cart();
+    }
 ?>
- <body>
         <main>
             <?php            
-            display_menu("appetizers", 4);
+                display_menu("appetizers", 4);
             ?>
         </main>  
-  </body>
+            <?php
+                include('include/footer.php');
+            ?>          
+    </body>
 </html>
