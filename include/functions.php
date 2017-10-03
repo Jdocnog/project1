@@ -49,17 +49,61 @@ function add_to_cart() {
 
 function display_cart() {
     $total = 0.00;
+    if(!isset($_SESSION['cart_array']) || empty($_SESSION['cart_array'])) {
+        echo "Your cart is empty!";
+    }
+    else {
+        foreach ($_SESSION['cart_array'] as $item) {
+            foreach ($item as $key => $value) {
+                if ($key == 'name') {
+                    echo "$value<br>";
+                }
+                else {
+                    echo '$';
+                    echo "$value<br>";
+                    $total = $total + (float)$value;
+                }
+            }
+        }
+        echo "<br>Your total comes to: $$total";
+    }
+}
+
+function display_checkout() {
+    $address = $_GET['address'];
+    $city = $_GET['city'];
+    $state = $_GET['state'];
+    $zip = $_GET['zip'];
+    echo <<<EOD
+        <p>Address: $address</p>
+        <p>City: $city</p>
+        <p>State: $state</p>
+        <p>Postal/ZIP Code: $zip</p>
+        <p>Your order:</p>
+EOD;
+    display_cart();
+    echo "<br>Estimated arrival time: July 7, 2196";   
+}
+
+function write_cart() {
+    $file_out = fopen("text/orders.txt", "a");
+    //$address = $_GET['address'];
+    //$city = $_GET['city'];
+    //$state = $_GET['state'];
+    //$zip = $_GET['zip'];
+    //fwrite($file_out, $address);
+    //fwrite($file_out, $city);
+    //fwrite($file_out, $state);
+    //fwrite($file_out, $zip);
     foreach ($_SESSION['cart_array'] as $item) {
         foreach ($item as $key => $value) {
             if ($key == 'name') {
-                echo "$value<br>";
+                fwrite($file_out, $value);
             }
             else {
-                echo '$';
-                echo "$value<br>";
-                $total = $total + (float)$value;
+                fwrite($file_out, "$$value");
             }
         }
     }
-    echo "<br>Your total comes to: $$total";
+    $_SESSION['cart_array'] = array();
 }

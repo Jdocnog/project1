@@ -16,7 +16,7 @@ include('./include/functions.php');
                     <label>State</label><li><input type="text" name="state"></li>
                     <label>Postal/ZIP Code</label><li><input type="text" name="zip"></li>
                 </ul>
-                <div><input type="submit" name="submit_shipping"></div>
+                <div><input type="submit" value="Proceed to Checkout"></div>
             </form>
         </main>  
   

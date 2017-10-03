@@ -9,7 +9,10 @@ include('./include/functions.php');
 ?>
  
 	<main>
-        
+            <?php
+            display_checkout();
+            write_cart();
+            ?>
         </main>  
   <?php
             include('include/footer.php');

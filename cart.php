@@ -14,6 +14,9 @@ include('./include/functions.php');
             <?php
             display_cart();
             ?>
+            <form action="./shipping.php">
+                <input type="submit" value="Proceed to Shipping">
+            </form>
         </main>  
         
         <?php
