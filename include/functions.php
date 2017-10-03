@@ -1,7 +1,7 @@
 <?php
 function init_array (){
-    $menu = file('./text/menu.txt');
-    $file_in = fopen($menu, "r");
+    $menu = file('text/menu.txt');
+    $file_in = fopen("text/menu.txt", "r");
     
     $num_to_do = count($menu);
     for ($i = 0; $i < ($num_to_do/4); $i++) {
@@ -23,12 +23,13 @@ function init_array (){
         $item_array['type'] = $type;
         
         array_push($_SESSION['menu_array'], $item_array);
+        
     }
 }
 
 function display_menu($menu_type) {
     foreach ($_SESSION['menu_array'] as $item) {
-        if(strpos($item['type'], $menu_type) === true);
+        if($item['type'] == $menu_type)
         {
             $name = $item['name'];
             $price = $item['price'];
