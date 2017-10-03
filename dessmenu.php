@@ -12,7 +12,7 @@
 ?>	
         <main>
             <?php
-                display_menu("desserts", 4);
+                display_menu("d");
             ?>
         </main> 
             <?php

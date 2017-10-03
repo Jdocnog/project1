@@ -5,6 +5,10 @@
             include('./include/header.php');
             session_start();
             include('./include/functions.php');
+            if(!isset($_SESSION['menu_array'])) {
+                $_SESSION['menu_array'] = array();
+                init_array();
+            }
         ?>
         <main> 
             <p>

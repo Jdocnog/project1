@@ -15,7 +15,7 @@
 ?>
         <main>
             <?php            
-                display_menu("appetizers", 4);
+                display_menu("a");
             ?>
         </main>  
             <?php
