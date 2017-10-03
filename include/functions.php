@@ -1,21 +1,38 @@
 <?php
-function display_menu($menu_type, $menu_size) {
-    $file_in = fopen("text/menu.txt", "r");
-    $count = 0;
-    if ($file_in) {
-        $line = fgets($file_in);
-        while ($line != false) {
-            if (strpos($line, $menu_type) !== false) {
-                break;
-            }
-            else {
-                $line = fgets($file_in);
-            }
-        }
-        while ($count < $menu_size) {
-            $name = fgets($file_in);
-            $price = fgets($file_in);
-            $url = fgets($file_in);
+function init_array (){
+    $menu = file('./text/menu.txt');
+    $file_in = fopen($menu, "r");
+    
+    $num_to_do = count($menu);
+    for ($i = 0; $i < ($num_to_do/4); $i++) {
+        
+        $name = fgets($file_in);
+        $name = trim($name);
+        $price = fgets($file_in);
+        $price = trim($price);
+        $url = fgets($file_in);
+        $url = trim($url);
+        $type = fgets($file_in);
+        $type = trim($type);
+        
+        $item_array = array();
+        
+        $item_array['name'] = $name;
+        $item_array['price'] = $price;
+        $item_array['url'] = $url;
+        $item_array['type'] = $type;
+        
+        array_push($_SESSION['menu_array'], $item_array);
+    }
+}
+
+function display_menu($menu_type) {
+    foreach ($_SESSION['menu_array'] as $item) {
+        if(strpos($item['type'], $menu_type) === true);
+        {
+            $name = $item['name'];
+            $price = $item['price'];
+            $url = $item['url'];
             echo <<<EOD
                 <form action="">
                     <figure>
@@ -28,14 +45,10 @@ function display_menu($menu_type, $menu_size) {
                     </figure>
                 </form>
 EOD;
-            $count++;
         }
     }
-    else {
-        // Case for if there is no file of the specified name.
-        echo "Could not process request.";
-    }
 }
+
 
 function add_to_cart() {
     if(!isset($_SESSION['cart_array'])) {
