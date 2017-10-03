@@ -87,14 +87,14 @@ EOD;
 
 function write_cart() {
     $file_out = fopen("text/orders.txt", "a");
-    //$address = $_GET['address'];
-    //$city = $_GET['city'];
-    //$state = $_GET['state'];
-    //$zip = $_GET['zip'];
-    //fwrite($file_out, $address);
-    //fwrite($file_out, $city);
-    //fwrite($file_out, $state);
-    //fwrite($file_out, $zip);
+    $address = $_GET['address'];
+    $city = $_GET['city'];
+    $state = $_GET['state'];
+    $zip = $_GET['zip'];
+    fwrite($file_out, "Address: $address\n");
+    fwrite($file_out, "City: $city\n");
+    fwrite($file_out, "State: $state\n");
+    fwrite($file_out, "Postal/Zip Code: $zip\n");
     foreach ($_SESSION['cart_array'] as $item) {
         foreach ($item as $key => $value) {
             if ($key == 'name') {
@@ -105,5 +105,6 @@ function write_cart() {
             }
         }
     }
+    fwrite($file_out, "\n");
     $_SESSION['cart_array'] = array();
 }

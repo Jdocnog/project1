@@ -18,6 +18,7 @@
                 <li><a href="./entmenu.php">Entrees</a></li> 
                 <li><a href="./dessmenu.php">Desserts</a></li> 
                 <li><a href="./cart.php">Cart</a></li>
+                <li><a href="./about.php">About</a></li>
             </ul>
             <h1><?php echo $pageTitle; ?></h1>   
         </header>

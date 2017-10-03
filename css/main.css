@@ -17,7 +17,7 @@ header h1 {
 
 header li {
    float: left;
-   width: 13%;
+   width: 10%;
    padding: .5% 3%;
 }
 
@@ -64,6 +64,18 @@ main li {
     clear: left;
 }
 
+main h2 {
+    clear: left;
+}
+
+main p {
+    clear: left;
+}
+
+h2 + ul {
+    list-style: circle;
+}
+
 label {
     margin-right: 10px;
     float: left;
@@ -77,4 +89,5 @@ div {
 footer {
     text-align: center;
     background-color: white;
+    clear: both;
 }

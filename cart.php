@@ -11,6 +11,7 @@ include('./include/functions.php');
 	
 
 	<main>
+            <h2>Cart contents:</h2>
             <?php
             display_cart();
             ?>
