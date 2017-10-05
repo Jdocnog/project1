@@ -105,10 +105,10 @@ function write_cart() {
     $city = $_GET['city'];
     $state = $_GET['state'];
     $zip = $_GET['zip'];
-    fwrite($file_out, "Address: $address\n");
-    fwrite($file_out, "City: $city\n");
-    fwrite($file_out, "State: $state\n");
-    fwrite($file_out, "Postal/Zip Code: $zip\n");
+    fwrite($file_out, "Address: $address" . PHP_EOL);
+    fwrite($file_out, "City: $city" . PHP_EOL);
+    fwrite($file_out, "State: $state" . PHP_EOL);
+    fwrite($file_out, "Postal/Zip Code: $zip" . PHP_EOL);
     foreach ($_SESSION['cart_array'] as $item) {
         foreach ($item as $key => $value) {
             if ($key == 'name') {

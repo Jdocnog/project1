@@ -14,12 +14,13 @@
                 2D array and included files.</p>
             <h2>Joe McCartney's Contributions</h2>
             <ul>
-                <li>Implemented all functions other than display_menu()</li>
+                <li>Assisted in the creation of init_array() and display_menu() functions</li>
+                <li>Implemented all other functions</li>
                 <li>Styling for all pages (excluding nav bar)</li>
             </ul>
             <h2>Jordan Burkitt's Contributions</h2>
             <ul>
-                <li>Implemented display_menu() function</li>
+                <li>Assisted in the creation of init_array() and display_menu() functions</li>
                 <li>implemented and styled nav bar</li>
                 <li>Wrote include files for header and footer</li>
             </ul>
